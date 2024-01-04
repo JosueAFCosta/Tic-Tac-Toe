@@ -1,0 +1,217 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--font-color);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+:root {
+    --bg-color: #313131;
+    --font-color: #f1f5f9;
+    --button-color: #ebebce;
+    --x-color: #ff0000;
+    --o-color: #56adff;
+    --green-color: #00ff00;
+}
+
+header {
+    margin: 1.2rem auto;
+}
+
+h1 {
+    margin: auto;
+    text-align: center;
+}
+
+.players{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.playersNames {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.teams {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.team {
+    width: 124.7px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+#x {
+    color: var(--x-color);
+}
+
+#o {
+    color: var(--o-color)
+}
+
+#startBtn {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 10rem;
+    background-color: var(--green-color);
+    border: 1px solid var(--font-color);
+    color: var(--bg-color);
+}
+
+.startBtn {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h2 {
+    flex: 1;
+    border: none;
+    border-radius: .25rem;
+    font-weight: 700;
+    padding: .5rem 1rem;
+}
+
+button {
+    border-radius: .25rem;
+    background-color: var(--button-color);
+}
+
+button:not([disabled]) {
+    cursor: pointer;
+}
+
+input {
+    width: 124.7px;
+    text-align: center;
+    border: 2px solid var(--bg-color);
+    border-radius: .25rem;
+    color: var(--bg-color);
+    background-color: var(--font-color);
+}
+
+.turn {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.ttt {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    margin: auto;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0;
+    width: 18rem;
+    height: 18rem;
+}
+
+.tttBtn {
+    width: 6rem;
+    height: 6rem;
+    font-size: 6rem;
+    line-height: 6rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.x {
+    color: var(--x-color);
+}
+.o {
+    color: var(--o-color);
+}
+
+#themeSwitcher {
+    font-weight: 700;
+    padding: .5rem;
+    position: fixed;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    background-color: var(--bg-color);
+    border: .125rem solid var(--font-color);
+    color: var(--font-color);
+}
+  
+#themeSwitcher:hover {
+background-color: var(--font-color);
+color: var(--bg-color);
+transition: .15s;
+}
+
+.winner {
+    background-color: var(--green-color) !important;
+}
+
+.playAgain {
+    font-weight: 700;
+    padding: .5rem;
+    background-color: var(--button-color);
+    border: .125rem solid var(--bg-color);
+    color: var(--bg-color);
+}
+
+#tl {
+    border: 0px solid var(--bg-color);
+    border-right: 2px solid var(--bg-color);
+    border-bottom: 2px solid var(--bg-color);
+}
+#tm {
+    border: 0px solid var(--bg-color);
+    border-right: 2px solid var(--bg-color);
+    border-bottom: 2px solid var(--bg-color);
+    border-left: 2px solid var(--bg-color);
+}
+#tr {
+    border: 0px solid var(--bg-color);
+    border-bottom: 2px solid var(--bg-color);
+    border-left: 2px solid var(--bg-color);
+}
+#ml {
+    border: 0px solid var(--bg-color);
+    border-top: 2px solid var(--bg-color);
+    border-right: 2px solid var(--bg-color);
+    border-bottom: 2px solid var(--bg-color);
+}
+#mm {
+    border: 2px solid var(--bg-color);
+}
+#mr {
+    border: 0px solid var(--bg-color);
+    border-top: 2px solid var(--bg-color);
+    border-bottom: 2px solid var(--bg-color);
+    border-left: 2px solid var(--bg-color);
+}
+#bl {
+    border: 0px solid var(--bg-color);
+    border-top: 2px solid var(--bg-color);
+    border-right: 2px solid var(--bg-color);
+}
+#bm {
+    border: 0px solid var(--bg-color);
+    border-top: 2px solid var(--bg-color);
+    border-right: 2px solid var(--bg-color);
+    border-left: 2px solid var(--bg-color);
+}
+#br {
+    border: 0px solid var(--bg-color);
+    border-top: 2px solid var(--bg-color);
+    border-left: 2px solid var(--bg-color);
+}

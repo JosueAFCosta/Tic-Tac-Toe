@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <main data-theme="dark">
+        <header class="header">
+            <h1>Tic-Tac-Toe</h1>
+            <form>
+                <div class="players">
+                    <label for="player1"><h2>Player 1</h2></label>
+                    <label for="player2"><h2>Player 2</h2></label>
+                </div>
+                <div class="playersNames">
+                    <input type="text" name="player1" id="player1">
+                    <input type="text" name="player2" id="player2">
+                </div>
+                <div class="teams">
+                    <p class="team" id="x">x</p>
+                    <p class="team" id="o">o</p>
+                </div>
+                <div class="startBtn">
+                    <button type="submit" id="startBtn">START!</button>
+                </div>
+            </form>
+        </header>
+        <hr>
+        <section class="game">
+            <div class="turn">
+                <h3>Player Turn: </h3>
+                <p id="playerName"></p>
+            </div>
+            <div class="ttt">
+                <button class="tttBtn" id="tl" data-value="tl" disabled> </button>
+                <button class="tttBtn" id="tm" data-value="tm" disabled> </button>
+                <button class="tttBtn" id="tr" data-value="tr" disabled> </button>
+                <button class="tttBtn" id="ml" data-value="ml" disabled> </button>
+                <button class="tttBtn" id="mm" data-value="mm" disabled> </button>
+                <button class="tttBtn" id="mr" data-value="mr" disabled> </button>
+                <button class="tttBtn" id="bl" data-value="bl" disabled> </button>
+                <button class="tttBtn" id="bm" data-value="bm" disabled> </button>
+                <button class="tttBtn" id="br" data-value="br" disabled> </button>
+            </div>
+        </section>
+
+        <button id="themeSwitcher">Switch Theme Dark/Light</button> 
+    </main>
+</body>
+</html>
