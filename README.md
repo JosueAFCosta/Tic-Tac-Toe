@@ -1,2 +1,4 @@
-# Tic-Tac-Toe
-Tic-Tac-Toe game made with Html, Css and JavaScript
+
+# Tic-Tac-Toe (Projeto OneBitCode)
+
+Jogo da velha feito com HTML, CSS e JS
